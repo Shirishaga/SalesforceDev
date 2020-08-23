@@ -1,7 +1,6 @@
-public with sharing class OwnerDetailsFetchTest {
-    public static testmethod OwnerDetailsFetchTest() {
-
-       
+@isTest
+public class OwnerDetailsFetchTest {
+    public  static testmethod void OwnerDetailsFetchTest() {
 
         UserRole r = new UserRole(DeveloperName = 'Shirisha', Name = 'Shirisha');
             insert r;
