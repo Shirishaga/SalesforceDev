@@ -1,0 +1,12 @@
+<aura:component  controller="OwnerDetailsFetch" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"  access="global">
+    <aura:attribute name="usr" type="SOBJECt"/>
+    <aura:handler name="init" value="{!this}" action = "{!c.doInIt}"/>
+    <div class="card">
+            <div class="card-header">
+                <p>{!v.usr.Name}</p>
+                <img src="{!v.usr.FullPhotoUrl}" class="img-fluid" alt="Responsive image" />
+                <img src="{!v.usr.SmallPhotoUrl}" class="img-fluid" alt="Responsive image" />
+            </div>
+        </div>
+
+</aura:component>
